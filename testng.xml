@@ -1,0 +1,15 @@
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Jawal/IdeaProjects/mentor">
+        <classes>
+            <class name="loginDocuport.LoginForAllRoles">
+                <methods>
+                    <include name="negativeLoginTest"/>
+                    <include name="validateClientLogin"/>
+                    <include name="validateSupervisorLogin"/>
+                    <include name="validateAdvisorLogin"/>
+                    <include name="validateEmployeeLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
