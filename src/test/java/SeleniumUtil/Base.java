@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -42,7 +43,7 @@ public class Base extends Driver{
     // generic teardown AfterMethod
 //    @AfterMethod
 //    public void teardown() {
-//        driver.quit();
+//        closeDriver();
 //    }
 
     // login positive
