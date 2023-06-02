@@ -26,9 +26,11 @@ public class LoginForAllRoles extends Base {
 
         // login with no password and test the attribute has been updated
         // password text field has changed -> shows red class attribute has changed
-        String normalPasswordTextFieldClassAttr = getDriver().findElement(By.xpath("//label[@for='input-15']")).getAttribute("class");
+        String normalPasswordTextFieldClassAttr = getDriver().
+                findElement(By.xpath("//label[@for='input-15']")).getAttribute("class");
         getDriver().findElement(By.xpath("//button[@type='submit']")).click();
-        Assert.assertNotEquals(getDriver().findElement(By.xpath("//label[@for='input-15']")).getAttribute("class"), normalPasswordTextFieldClassAttr);
+        Assert.assertNotEquals(getDriver().findElement
+                (By.xpath("//label[@for='input-15']")).getAttribute("class"), normalPasswordTextFieldClassAttr);
 
         // error message is displayed below the password text field
         String errorMessageNoPassword = getDriver().findElement(By.xpath("//div[@class='v-messages__message']")).getText();

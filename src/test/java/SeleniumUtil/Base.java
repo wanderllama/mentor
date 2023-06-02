@@ -53,14 +53,6 @@ public class Base extends Driver{
         driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 
-    // login negative
-    public void negativeLogin(WebDriver driver, String userName) {
-        driver.get(getProperties("docuportUrl"));
-        driver.findElement(By.cssSelector("input#input-14")).sendKeys(getProperties("userName"));
-        driver.findElement(By.cssSelector("input#input-15")).sendKeys("basPassword");
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
-    }
-
     // Create Selenium Objects
     // create WebDriverWait object
     public WebDriverWait createWait(WebDriver driver) {
