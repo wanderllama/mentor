@@ -8,5 +8,5 @@
 /dataSources.local.xml
 /target/
 *.xml
-/.idea/compiler.xml
 /.idea/
+mentor.iml

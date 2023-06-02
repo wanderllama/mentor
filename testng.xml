@@ -1,7 +1,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Jawal/IdeaProjects/mentor">
         <classes>
-            <class name="loginDocuport.LoginForAllRoles">
+            <class name="docuport.LoginForAllRoles">
                 <methods>
                     <include name="negativeLoginTest"/>
                     <include name="validateClientLogin"/>

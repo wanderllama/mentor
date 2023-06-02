@@ -1,4 +1,4 @@
-package loginDocuport;
+package docuport;
 
 import SeleniumUtil.Base;
 import org.openqa.selenium.By;
@@ -25,10 +25,10 @@ public class LoginForAllRoles extends Base {
         Assert.assertEquals(errorMessageBadPassword, "Username or password is incorrect");
 
         // login with no password and test the attribute has been updated
-        // password text field has changed -> shows red
-        String normalPasswordClassAttribute = getDriver().findElement(By.xpath("//label[@for='input-15']")).getAttribute("class");
+        // password text field has changed -> shows red class attribute has changed
+        String normalPasswordTextFieldClassAttr = getDriver().findElement(By.xpath("//label[@for='input-15']")).getAttribute("class");
         getDriver().findElement(By.xpath("//button[@type='submit']")).click();
-        Assert.assertNotEquals(getDriver().findElement(By.xpath("//label[@for='input-15']")).getAttribute("class"), normalPasswordClassAttribute);
+        Assert.assertNotEquals(getDriver().findElement(By.xpath("//label[@for='input-15']")).getAttribute("class"), normalPasswordTextFieldClassAttr);
 
         // error message is displayed below the password text field
         String errorMessageNoPassword = getDriver().findElement(By.xpath("//div[@class='v-messages__message']")).getText();

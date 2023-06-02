@@ -14,8 +14,6 @@ import java.util.Properties;
 
 public class Base extends Driver{
 
-    public static WebDriver driver;
-
     private static Properties p = new Properties();
 
     // static block to read config.properties resource bundle file
@@ -97,9 +95,12 @@ public class Base extends Driver{
     }
 
     // text verification
+    // text verification is overloaded
     public void textVerification(WebElement element , String text) {
         Assert.assertEquals(element.getText() , text);
     }
+    public void textVerification(String actual, String expected) {
+        Assert.assertEquals(actual, expected);}
     public void textVerificationContains(WebElement element , String text) {
         Assert.assertTrue(element.getText().contains(text));
     }
