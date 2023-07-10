@@ -51,5 +51,9 @@ return 0;
 
 
         System.out.println(globalString);
+
+            // this is a conflict -> created in gihub
+        // but i want to do this
+        // and this
     }
 }
