@@ -16,8 +16,4 @@ public class mergeConflict {
         int y = 7;
         System.out.println(x + y);
     }
-
-
-
-
 }
